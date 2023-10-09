@@ -1,0 +1,87 @@
+<div class="content">
+    <div class="header" id="header">
+      <div class="nav">
+       <label></label>
+       <div class="name">
+        cours management website
+       </div>
+       <div class="switchs">
+        <button style="font-weight: bold;" class="log" id="log" [routerLink]="['']"><i class="fa fa-home"></i> Home</button>
+        <button style="font-weight: bold;" class="log" id="log" onclick="location.href='#services';"><i class="fa fa-cog"></i> Services</button>
+        <button style="font-weight: bold;" class="log" id="log" [routerLink]="['/login']"><i class="fa fa-sign-in"></i> LOGIN</button>
+        <button style="font-weight: bold;" class="create_acc" id="create_acc" [routerLink]="['/registration']"><i class="fa fa-user-plus"></i> CREATE ACCOUNT</button>
+      </div>
+    </div>
+    <div class="main">
+    	<div class="text">
+    		<h1 style="margin-left: -10%; font-family: sans-serif;">The University Name </h1><br>
+
+    	</div><br>
+      <img class="floating" id="img3" style="border-radius: 15px;" [src]="'assets/img/University.png'">
+    </div>
+  </div>
+  <br>
+</div>
+<br><br>
+<marquee class="marquee" direction="left">
+  Class management involves the planning, organization, and implementation of all activities related to teaching and learning a course. This includes preparing educational materials, creating schedules, defining learning objectives, evaluating students, and managing the classroom.</marquee>
+
+<section id="about" class="about about-bg">
+  <div class="about-container">
+      <div class="subtext1" id="subtext1"><span class="counter">01</span> &nbsp;Ready to take your studying to the next level?<i id="subtext1" class="fa fa-caret-down"></i></div>
+        <div class="innertext1" id="innertext1">Discover effective study techniques and strategies to achieve academic success.</div>
+  </div>
+  
+  <div class="about-container">
+        <div class="subtext1" id="subtext2"><span class="counter">02</span> &nbsp;Study Tips and Advice<i id="subtext2" class="fa fa-caret-down"></i></div>
+        <div class="innertext1" id="innertext2"> <h5>a. Set Clear Goals</h5>
+          <p>Define specific goals for each study session to stay focused and motivated.</p>
+          <h5>b. Create a Study Schedule</h5>
+          <p>Plan dedicated study time in your schedule to establish a routine and maintain consistency.</p>
+          <h5>c. Use Active Learning Techniques</h5>
+          <p>Engage with the material actively by summarizing, asking questions, and teaching concepts to others.</p></div>
+  </div>
+  <div class="about-container">
+        <div class="subtext1" id="subtext3"><span class="counter">03</span> &nbsp;Student Success Stories<i id="subtext3" class="fa fa-caret-down"></i></div>
+        <div class="innertext1" id="innertext3">"By following the study tips on Study Boost, I've seen a significant improvement in my grades. It's a game-changer!"</div>
+  </div>
+  <div class="about-container">
+        <div class="subtext1" id="subtext4"><span class="counter">04</span> &nbsp;Strive for Better Grades<i id="subtext4" class="fa fa-caret-down"></i></div>
+        <div class="innertext1" id="innertext4">Discover resources and strategies to boost your academic performance and achieve excellent grades</div>
+  </div><br>
+  <img class="automation" [src]="'assets/img/website.png'" width="470" height="470">
+</section>
+
+<main id="main">
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2 style="font-family: 'Skranji', cursive; color: rgb(3, 34, 34);">User friendly portal for Learning</h2>
+      </div>
+      <div class="mid_body2">
+        <div class="details">
+          <div class="detail_1" (click)="navigate()" style="background-color:  rgba(86, 116, 212, 0.918); margin-right: 5%;">
+            <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> Admin </h2>
+            <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+                <img [src]="'assets/img/admin.png'" width="130" height="130">
+            </div>
+          </div>
+          <div class="detail_2" (click)="navigate()" style="background-color:  rgba(86, 116, 212, 0.918); margin-right: 5%;">
+            <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> Professor </h2>
+            <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+                <img [src]="'assets/img/femaleprofessor.png'" width="130" height="130">
+            </div>
+        </div>
+          <div class="detail_3" (click)="navigate()" style="background-color: rgba(86, 116, 212, 0.918); margin-right: 5%;">
+            <h2 style="font-weight: bolder; font-size: 35px;font-family: monospace; margin-top: 5%; color: white;"> Student </h2>
+            <div class="circle" style="border-radius: 50%; background-color: white; padding: 10%;">
+                <img [src]="'assets/img/male.png'" width="130" height="130">
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>
